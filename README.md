@@ -70,6 +70,13 @@ See [pipeline.md](./pipeline.md) for step-by-step instructions.
 | **Use Tools** | Configure and use build tools in pipelines | [use-tools-in-pipeline.md](./use-tools-in-pipeline.md) |
 | **Variables & Methods** | Working with variables and custom methods | [variables-methods-in-pipeline.md](./variables-methods-in-pipeline.md) |
 | **With Credentials** | Secure credential management | [with-credentials.md](./with-credentials.md) |
+| **Parallel Stages** | Run multiple stages in parallel | [parallel-stages.groovy](./parallel-stages.groovy) |
+| **Conditional Stages** | Execute stages based on conditions | [conditional-stages.groovy](./conditional-stages.groovy) |
+| **Error Handling** | Handle errors and retries in pipelines | [error-handling.groovy](./error-handling.groovy) |
+| **Docker Pipeline** | Build, test, and deploy Docker containers | [docker-pipeline.groovy](./docker-pipeline.groovy) |
+| **Multi-Branch Pipeline** | Branch-specific pipeline behavior | [multi-branch-pipeline.groovy](./multi-branch-pipeline.groovy) |
+| **Notifications** | Send email and Slack notifications | [notification-pipeline.groovy](./notification-pipeline.groovy) |
+| **Shared Libraries** | Use shared libraries for reusable code | [shared-library-example.groovy](./shared-library-example.groovy) |
 
 ## 🔧 Pipeline Examples
 
@@ -140,18 +147,30 @@ pipeline {
 JenkinsTutorials/
 ├── README.md                           # This file
 ├── pipeline.md                         # Pipeline creation guide
-├── jenkinsfile.groovy                  # Basic Jenkinsfile example
-├── install-jenkins.md                  # Jenkins installation guide
-├── install-plugins.md                  # Plugin installation guide
-├── maven-build.groovy                  # Maven build pipeline
-├── get-git-projects.groovy             # Git project retrieval pipeline
-├── build-with-parameters.md            # Parameterized builds guide
-├── checkout-groovy-from-scm.md         # SCM checkout guide
-├── read-json.md                        # JSON/CSV parsing guide
-├── scripts-in-steps.md                 # Script execution guide
-├── use-tools-in-pipeline.md            # Tool configuration guide
-├── variables-methods-in-pipeline.md    # Variables and methods guide
-├── with-credentials.md                 # Credentials management guide
+│
+├── Documentation/
+│   ├── install-jenkins.md              # Jenkins installation guide
+│   ├── install-plugins.md              # Plugin installation guide
+│   ├── build-with-parameters.md        # Parameterized builds guide
+│   ├── checkout-groovy-from-scm.md     # SCM checkout guide
+│   ├── read-json.md                    # JSON/CSV parsing guide
+│   ├── scripts-in-steps.md             # Script execution guide
+│   ├── use-tools-in-pipeline.md        # Tool configuration guide
+│   ├── variables-methods-in-pipeline.md # Variables and methods guide
+│   └── with-credentials.md             # Credentials management guide
+│
+├── Pipeline Examples/
+│   ├── jenkinsfile.groovy              # Basic Jenkinsfile example
+│   ├── maven-build.groovy              # Maven build pipeline
+│   ├── get-git-projects.groovy         # Git project retrieval pipeline
+│   ├── parallel-stages.groovy          # Parallel execution example
+│   ├── conditional-stages.groovy       # Conditional execution example
+│   ├── error-handling.groovy           # Error handling and retry
+│   ├── docker-pipeline.groovy          # Docker build and deploy
+│   ├── multi-branch-pipeline.groovy    # Multi-branch pipeline
+│   ├── notification-pipeline.groovy    # Email and Slack notifications
+│   └── shared-library-example.groovy   # Shared library usage
+│
 └── workspace/                          # Jenkins workspace directory
 ```
 
