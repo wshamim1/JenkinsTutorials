@@ -1,9 +1,0 @@
-1. Go to "Manage Jenkins" --> "Manage Plugins"
-2. Select Available tabs. 
-
-you will see list of all the plugins.
-
-say you want to install groovy, 
-
-search groovy in the search filed and check on the checkbox and install without restart.
-

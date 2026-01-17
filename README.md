@@ -42,7 +42,7 @@ This repository contains practical examples and tutorials for working with Jenki
 4. Use `admin` as the username
 5. Find the initial password in the security file provided during startup
 
-For detailed instructions, see [installJenkins](./installJenkins)
+For detailed instructions, see [install-jenkins.md](./install-jenkins.md)
 
 ## 📚 Tutorials
 
@@ -58,17 +58,18 @@ See [pipeline.md](./pipeline.md) for step-by-step instructions.
 
 | Tutorial | Description | File |
 |----------|-------------|------|
+| **Install Jenkins** | Complete Jenkins installation guide | [install-jenkins.md](./install-jenkins.md) |
+| **Install Plugins** | Plugin installation and management | [install-plugins.md](./install-plugins.md) |
 | **Basic Pipeline** | Simple pipeline with multiple stages | [jenkinsfile.groovy](./jenkinsfile.groovy) |
-| **Maven Build** | Clone Git repo and build Maven project | [mavenbuild](./mavenbuild) |
-| **Parameterized Build** | Build with user-defined parameters | [BuildWithParameter](./BuildWithParameter) |
-| **Git Checkout** | Checkout Groovy scripts from SCM | [checkoutgroovyfromSCM](./checkoutgroovyfromSCM) |
-| **Get Git Projects** | Retrieve projects from Git repositories | [GetGitProjects](./GetGitProjects) |
-| **Install Plugins** | Plugin installation guide | [installPlugins](./installPlugins) |
-| **Read JSON** | Parse and use JSON data in pipelines | [readJSON](./readJSON) |
-| **Scripts in Steps** | Execute scripts within pipeline steps | [ScriptsInSteps](./ScriptsInSteps) |
-| **Use Tools** | Configure and use tools in pipelines | [UseToolsinPipeline](./UseToolsinPipeline) |
-| **Variable Methods** | Working with variables and methods | [VariableMethodsinPipeline](./VariableMethodsinPipeline) |
-| **With Credentials** | Secure credential management | [withCredentials](./withCredentials) |
+| **Maven Build** | Clone Git repo and build Maven project | [maven-build.groovy](./maven-build.groovy) |
+| **Get Git Projects** | Retrieve and build Git projects | [get-git-projects.groovy](./get-git-projects.groovy) |
+| **Parameterized Build** | Build with user-defined parameters | [build-with-parameters.md](./build-with-parameters.md) |
+| **Git Checkout from SCM** | Checkout Groovy scripts from SCM | [checkout-groovy-from-scm.md](./checkout-groovy-from-scm.md) |
+| **Read JSON/CSV** | Parse and use JSON/CSV data in pipelines | [read-json.md](./read-json.md) |
+| **Scripts in Steps** | Execute Groovy scripts within pipeline steps | [scripts-in-steps.md](./scripts-in-steps.md) |
+| **Use Tools** | Configure and use build tools in pipelines | [use-tools-in-pipeline.md](./use-tools-in-pipeline.md) |
+| **Variables & Methods** | Working with variables and custom methods | [variables-methods-in-pipeline.md](./variables-methods-in-pipeline.md) |
+| **With Credentials** | Secure credential management | [with-credentials.md](./with-credentials.md) |
 
 ## 🔧 Pipeline Examples
 
@@ -137,21 +138,21 @@ pipeline {
 
 ```
 JenkinsTutorials/
-├── README.md
-├── pipeline.md                    # Pipeline creation guide
-├── jenkinsfile.groovy            # Basic Jenkinsfile example
-├── installJenkins                # Jenkins installation guide
-├── installPlugins                # Plugin installation
-├── mavenbuild                    # Maven build pipeline
-├── BuildWithParameter            # Parameterized builds
-├── checkoutgroovyfromSCM        # SCM checkout examples
-├── GetGitProjects               # Git project retrieval
-├── readJSON                     # JSON parsing
-├── ScriptsInSteps               # Script execution
-├── UseToolsinPipeline           # Tool configuration
-├── VariableMethodsinPipeline    # Variables and methods
-├── withCredentials              # Credentials management
-└── workspace/                   # Jenkins workspace directory
+├── README.md                           # This file
+├── pipeline.md                         # Pipeline creation guide
+├── jenkinsfile.groovy                  # Basic Jenkinsfile example
+├── install-jenkins.md                  # Jenkins installation guide
+├── install-plugins.md                  # Plugin installation guide
+├── maven-build.groovy                  # Maven build pipeline
+├── get-git-projects.groovy             # Git project retrieval pipeline
+├── build-with-parameters.md            # Parameterized builds guide
+├── checkout-groovy-from-scm.md         # SCM checkout guide
+├── read-json.md                        # JSON/CSV parsing guide
+├── scripts-in-steps.md                 # Script execution guide
+├── use-tools-in-pipeline.md            # Tool configuration guide
+├── variables-methods-in-pipeline.md    # Variables and methods guide
+├── with-credentials.md                 # Credentials management guide
+└── workspace/                          # Jenkins workspace directory
 ```
 
 ## 🤝 Contributing
